@@ -24,7 +24,7 @@ export default function Home() {
 
   const generateImage = async (prompt: string) => {
     const path = "https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image";
-    const apiKey = process.env.API_KEY;
+    const apiKey = process.env.NEXT_PUBLIC_STABILITY_API_KEY;
     
     const headers = {
       Accept: "application/json",
